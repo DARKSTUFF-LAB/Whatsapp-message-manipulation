@@ -1,0 +1,47 @@
+INSERT INTO message (
+    _id,
+    chat_row_id,
+    from_me,
+    key_id,
+    sender_jid_row_id,
+    status,
+    broadcast,
+    recipient_count,
+    participant_hash,
+    origination_flags,
+    origin,
+    timestamp,
+    received_timestamp,
+    receipt_server_timestamp,
+    message_type,
+    text_data,
+    starred,
+    lookup_tables,
+    message_add_on_flags,
+    view_mode,
+    sort_id,
+    translated_text
+) VALUES (
+    533,  -- new_id value
+    13,   -- chat_row_id
+    0,    -- from_me
+    'D83EE8287E7C2127C861AF61271BD5CD',
+    0, -- ( sender ID )
+    13, -- status ( 13 saw )
+    0,
+    0,
+    0, -- ( must be NULL or 0 except for group messages )
+    0,
+    0,
+    1753651090000,
+    1753651090677,
+    1,
+    0,
+    'this is a test message',
+    0,
+    0,
+    0,
+    0,
+    533,
+    NULL
+);
